@@ -3,13 +3,18 @@ body {
     background-image: url("./imgs/night.avif");
 }
 
+
+
+/* Needs to be the Largest Celestial Object in the solar system */
 .sun img{
 
-    width: 1000px;
+    width: 1000px; 
     height: 950px;
 
 }
 
+
+/* Smaller than the  moon*/
 .mercury img{
     width: 300px;
     height: 300px;  
@@ -25,15 +30,19 @@ body {
     height: 300px;  
 }
 
+/* Larger than Mercury I believe...more research needed for that...but smaller than Earth so be wary of that*/
 .moon img{
     width: 300px;
     height: 300px;  
 }
 
+/* Smaller than Earth */
 .mars img{
     width: 300px;
     height: 300px;  
 }
+
+/* Second Largest Object */
 
 .jupiter img{
     width: 300px;
@@ -50,6 +59,8 @@ body {
     height: 300px;  
 }
 
+
+/* Larger than Saturn */
 .neptune img{
     width: 500px;
     height: 300px;  
