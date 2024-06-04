@@ -2,3 +2,55 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url("./imgs/night.avif");
 }
+
+.sun img{
+
+    width: 1000px;
+    height: 950px;
+
+}
+
+.mercury img{
+    width: 300px;
+    height: 300px;  
+}
+
+.venus img{
+    width: 300px;
+    height: 300px;  
+}
+
+.earth img{
+    width: 300px;
+    height: 300px;  
+}
+
+.moon img{
+    width: 300px;
+    height: 300px;  
+}
+
+.mars img{
+    width: 300px;
+    height: 300px;  
+}
+
+.jupiter img{
+    width: 300px;
+    height: 300px;  
+}
+
+.saturn img{
+    width: 500px;
+    height: 300px;  
+}
+
+.uranus img{
+    width: 300px;
+    height: 300px;  
+}
+
+.neptune img{
+    width: 500px;
+    height: 300px;  
+}
