@@ -1,45 +1,151 @@
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url("./imgs/night.avif");
+    height: 7000px;
 }
 
+.Solar-System {
+    font-size: 16px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
 
+.name {
+    color: white;
+}
 
 /* Needs to be the Largest Celestial Object in the solar system */
-.sun img{
+.sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    border-radius: 50%;
+    box-shadow: 8  0 3em rgb(255, 128, 0);
+    animation: orbit 50s linear infinite;
+}
 
+.mercury, .venus, .earth, .moon, 
+.mars, .jupiter, .saturn, .uranus, .neptune{
+    position: absolute;
+    border: solid white transparent transparent transparent;
+    border-radius: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.mercury {
+    top: 12.5em;
+    left: 12.5em;
+    width: 15em;
+    height: 20em;
+    animation: orbit 50s linear infinite;
+}
+
+.venus {
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 50s linear infinite;
+}
+
+.earth {
+    top: 6em;
+    left: 6em;
+    width: 28em;
+    height: 28em;
+    animation: orbit 50s linear infinite;
+}
+
+.moon {
+    top: 2em;
+    left: 2.5em;
+    width: 7em;
+    height: 7em;
+    animation: orbit 50s linear infinite;
+}
+
+.mars {
+    top: 2em;
+    left: 2.5em;
+    width: 36em;
+    height: 7em;
+    animation: orbit 50s linear infinite;
+}
+
+.jupiter {
+    top: -2em;
+    left: -2em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 50s linear infinite;
+}
+
+.saturn {
+    top: -7em;
+    left: -7em;
+    width: 55em;
+    height: 55em;
+    animation: orbit 50s linear infinite;
+}
+
+.uranus {
+    top: -12em;
+    left: -12em;
+    width: 65em;
+    height: 65em;
+    animation: orbit 50s linear infinite;
+}
+
+.neptune {
+    top: 2em;
+    left: 2.5em;
+    width: 7em;
+    height: 7em;
+    animation: orbit 50s linear infinite;
+}
+
+
+.sun img{
     width: 1000px; 
-    height: 950px;
+    height: 900px;
 
 }
 
 
-/* Smaller than the  moon*/
+/* Smaller than everything else*/
+
 .mercury img{
-    width: 300px;
-    height: 300px;  
+    width: 7px;
+    height: 10px;  
 }
 
 .venus img{
-    width: 300px;
-    height: 300px;  
+    width: 20px;
+    height: 25px;  
 }
 
 .earth img{
-    width: 300px;
-    height: 300px;  
+    width: 30px;
+    height: 35px;  
 }
 
-/* Larger than Mercury I believe...more research needed for that...but smaller than Earth so be wary of that*/
+/* Nah not larger than mercury*/
 .moon img{
-    width: 300px;
-    height: 300px;  
+    width: 2px;
+    height: 3px;  
 }
 
 /* Smaller than Earth */
 .mars img{
-    width: 300px;
-    height: 300px;  
+    width: 10px;
+    height: 14px;  
 }
 
 /* Second Largest Object */
@@ -50,18 +156,18 @@ body {
 }
 
 .saturn img{
-    width: 500px;
-    height: 300px;  
+    width: 250px;
+    height: 100px;  
 }
 
 .uranus img{
-    width: 300px;
-    height: 300px;  
+    width: 200px;
+    height: 150px;  
 }
 
 
 /* Larger than Saturn */
 .neptune img{
-    width: 500px;
-    height: 300px;  
+    width: 250px;
+    height: 150px;  
 }
