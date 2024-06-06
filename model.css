@@ -19,6 +19,8 @@ body {
     color: white;
 }
 
+/* A pseudo-3d effect needs to be made but with 2D objects */
+
 /* Needs to be the Largest Celestial Object in the solar system */
 .sun {
     display: flex;
@@ -29,7 +31,7 @@ body {
     left: 15em;
     border-radius: 50%;
     box-shadow: 8  0 3em rgb(255, 128, 0);
-    animation: orbit 50s linear infinite;
+    animation: orbit 5000s linear infinite;
 }
 
 .mercury, .venus, .earth, .moon, 
@@ -45,7 +47,7 @@ body {
     left: 12.5em;
     width: 15em;
     height: 20em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 87.97s linear infinite;
 }
 
 .venus {
@@ -53,31 +55,32 @@ body {
     left: 10em;
     width: 20em;
     height: 20em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 224.70s linear infinite;
 }
 
 .earth {
-    top: 6em;
-    left: 6em;
+    top: 0em;
+    left: 0em;
     width: 28em;
     height: 28em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 354.26s linear infinite;
 }
 
+/* Elipsical orbit is made */
 .moon {
     top: 2em;
-    right: -5em;
+    right: 2em;
     width: -15em;
     height: -15em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 10s linear infinite;
 }
 
 .mars {
-    top: 2em;
-    left: 2.5em;
+    top: -1em;
+    left: -1em;
     width: 36em;
     height: 7em;
-    animation: orbit 2.5s linear infinite;
+    animation: orbit 686.98s linear infinite;
 }
 
 .jupiter {
@@ -85,7 +88,7 @@ body {
     left: -2em;
     width: 45em;
     height: 45em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 3000s linear infinite;
 }
 
 .saturn {
@@ -93,7 +96,7 @@ body {
     left: -7em;
     width: 55em;
     height: 55em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 6000s linear infinite;
 }
 
 .uranus {
@@ -101,7 +104,7 @@ body {
     left: -12em;
     width: 65em;
     height: 65em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 12000s linear infinite;
 }
 
 .neptune {
@@ -109,7 +112,7 @@ body {
     left: -17em;
     width: 75em;
     height: 75em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 24000s linear infinite;
 }
 
 .mercury::before, .venus::before, .earth::before, .moon::before, .mars::before, .jupiter::before, .saturn::before, .uranus::before, .neptune::before {
@@ -140,15 +143,15 @@ body {
 .earth::before {
     top: 3em;
     right: 0em;
-    width: 5em;
-    height: 5em;
+    width: 3.7em;
+    height: 3.7em;
     background-image: url('./solarsystem/earth.png');
     background-size: cover;
 }
 
 .moon::before {
     top: 0.8em;
-    right: 3em;
+    right: 4.5em;
     width: 1em;
     height: 1em;
     background-image: url('./solarsystem/moon.png');
@@ -157,9 +160,51 @@ body {
 
 .mars::before {
     top: 5em;
-    right: -5em;
+    right: 0em;
     width: 3em;
     height: 3em;
     background-image: url('./solarsystem/mars.png');
     background-size: cover;
+}
+
+.jupiter::before {
+    top: 6em;
+    right: -2em;
+    width: 6em;
+    height: 6em;
+    background-image: url('./solarsystem/jupiter.png');
+    background-size: cover;
+}
+
+.saturn::before {
+    top: 6em;
+    right: -6em;
+    width: 10em;
+    height: 4em;
+    background-image: url('./solarsystem/saturn.png');
+    background-size: cover;
+}
+
+.uranus::before {
+    top: 6em;
+    right: -3em;
+    width: 4em;
+    height: 4em;
+    background-image: url('./solarsystem/uranus.png');
+    background-size: cover;
+}
+
+.neptune::before {
+    top: 6em;
+    right: -3em;
+    width: 6em;
+    height: 4.5em;
+    background-image: url('./solarsystem/neptune.png');
+    background-size: cover;
+}
+
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
 }
