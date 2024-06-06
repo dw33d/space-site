@@ -7,6 +7,7 @@ body {
     height: 7000px;
 }
 
+
 .Solar-System {
     font-size: 16px;
     width: 40em;
@@ -65,9 +66,9 @@ body {
 
 .moon {
     top: 2em;
-    left: 2.5em;
-    width: 7em;
-    height: 7em;
+    right: -5em;
+    width: -15em;
+    height: -15em;
     animation: orbit 50s linear infinite;
 }
 
@@ -76,7 +77,7 @@ body {
     left: 2.5em;
     width: 36em;
     height: 7em;
-    animation: orbit 50s linear infinite;
+    animation: orbit 2.5s linear infinite;
 }
 
 .jupiter {
@@ -104,70 +105,61 @@ body {
 }
 
 .neptune {
-    top: 2em;
-    left: 2.5em;
-    width: 7em;
-    height: 7em;
+    top: -17em;
+    left: -17em;
+    width: 75em;
+    height: 75em;
     animation: orbit 50s linear infinite;
 }
 
-
-.sun img{
-    width: 1000px; 
-    height: 900px;
-
+.mercury::before, .venus::before, .earth::before, .moon::before, .mars::before, .jupiter::before, .saturn::before, .uranus::before, .neptune::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: orbit 50s linear infinite;
 }
 
-
-/* Smaller than everything else*/
-
-.mercury img{
-    width: 7px;
-    height: 10px;  
+.mercury::before {
+    top: 1.5em;
+    right: 0.8em;
+    width: 2em;
+    height: 2em;
+    background-image: url('./solarsystem/mercury.png');
+    background-size: cover;
 }
 
-.venus img{
-    width: 20px;
-    height: 25px;  
+.venus::before {
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    background-image: url('./solarsystem/venus.png');
+    background-size: cover;
 }
 
-.earth img{
-    width: 30px;
-    height: 35px;  
+.earth::before {
+    top: 3em;
+    right: 0em;
+    width: 5em;
+    height: 5em;
+    background-image: url('./solarsystem/earth.png');
+    background-size: cover;
 }
 
-/* Nah not larger than mercury*/
-.moon img{
-    width: 2px;
-    height: 3px;  
+.moon::before {
+    top: 0.8em;
+    right: 3em;
+    width: 1em;
+    height: 1em;
+    background-image: url('./solarsystem/moon.png');
+    background-size: cover;
 }
 
-/* Smaller than Earth */
-.mars img{
-    width: 10px;
-    height: 14px;  
-}
-
-/* Second Largest Object */
-
-.jupiter img{
-    width: 300px;
-    height: 300px;  
-}
-
-.saturn img{
-    width: 250px;
-    height: 100px;  
-}
-
-.uranus img{
-    width: 200px;
-    height: 150px;  
-}
-
-
-/* Larger than Saturn */
-.neptune img{
-    width: 250px;
-    height: 150px;  
+.mars::before {
+    top: 5em;
+    right: -5em;
+    width: 3em;
+    height: 3em;
+    background-image: url('./solarsystem/mars.png');
+    background-size: cover;
 }
